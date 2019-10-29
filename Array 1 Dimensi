@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int oli[5];
+    int hasil=0;
+    for(int i=0; i<5; i++)
+        {
+            cout << "Input botol ke-" << (i + 1 ) << ":";
+            cin >> oli[i];
+        }
+     cout << "Nilai oli yang Anda masukkan ..." << endl;
+     for(int i=0; i<5; i++)
+        {
+            hasil+= oli[i];
+            cout << "\n botol ke-" << (i + 1) << " adalah " << oli[i] << " Liter";
+        }
+     cout << "\nTotal oli setiap botol ..." << endl << endl;
+     cout << hasil << " Liter";
+    return 0;
+}
